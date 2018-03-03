@@ -5,12 +5,11 @@
     templateUrl: "comp-taskList/taskList.html",
     bindings: {
       list: "<",
-      tdfliter: "<",
-      remove: "<"
+      tdfilter: "<"
     }
 
 
 
-    
+
   });
 })();
