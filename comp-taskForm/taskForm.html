@@ -1,0 +1,12 @@
+<div class="todoContent">
+        <h1>TODO List</h1>
+        <h4>A place to store the things you have to do!</h4>
+        <input ng-model="$ctrl.tdfilter" type="text" placeholder="Fliter your to-dos" />
+
+        <list list='$ctrl.list' tdfilter='$ctrl.tdfliter' ></list>
+        
+        <input ng-model="$ctrl.newToDo" ng-keyup="$event.keyCode == 13 && $ctrl.addToDo()" type="text" placeholder="Add your to-do" />
+        <button class="btn" ng-click="$ctrl.addToDo()">Add</button>
+        
+
+    </div>

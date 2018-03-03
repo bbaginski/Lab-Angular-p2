@@ -1,0 +1,3 @@
+<ol class="TDlist">
+    <li ng-repeat="TD in $ctrl.list | filter: $ctrl.tdfilter track by $index"> {{TD}} <span ng-click="$ctrl.remove($index)">X</span></li>
+</ol>
